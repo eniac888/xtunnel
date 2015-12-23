@@ -42,7 +42,6 @@ public class SettingFrame extends JDialog{
 		ui.loadConfig();
 		config=ui.getConfig();
 		setSize(size);
-		setLocationRelativeTo(parent);
 		setTitle("登录服务器");
 		
 		JPanel panel=(JPanel) getContentPane();
@@ -128,6 +127,7 @@ public class SettingFrame extends JDialog{
 			
 		});
 		pack();
+		setLocationRelativeTo(parent);
 	}
 	
 	JButton createButton(String name){
